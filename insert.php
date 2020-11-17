@@ -1,5 +1,5 @@
 <?php
-    include '../login.php';
+    include 'login.php';
     
     $conn = new mysqli($servername, $username, $password, $dbname);
     if ($conn->connect_error) {
@@ -20,7 +20,7 @@
         if ($result->num_rows == 1){
             $id = $result->fetch_assoc()["id"];
 
-            $target_dir = "www.tenda_laurams.cat/imatges/" .$id.".jpg";
+            $target_dir = "../projecte1/imatges/" .$id.".jpg";
             $nomImg=$_FILES['art_img']['name'];
             $tmpImg=$_FILES['art_img']['tmp_name'];
             if(is_uploaded_file($tmpImg)){

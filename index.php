@@ -12,10 +12,7 @@
     </style>
   </head>
   <body>
-    <?php
-      include 'header.php';
-    ?>
-
+        <h1 style="text-align: center;">AFEGIR ITEM</h1>
     <form action="insert.php" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
         <div class="form-row">
             <div class="col-md-6 mb-3">
